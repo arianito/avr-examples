@@ -1,0 +1,56 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+buffer                                                                            0x0193      16
+millis                                                                            0x01A3       4
+last_time                                                                         0x01A7       4
+_base_y                                                                           0x01AB       4
+_seed                                                                             0x01AF       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+page                                                                              R5           1
+key                                                                               R4           1
+last_key                                                                          R7           1
+update                                                                            R2.0      1bit
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+set                                                                               0x000B5     61
+get                                                                               0x000F2     57
+bcd_to_byte                                                                       0x0012B     13
+byte_to_bcd                                                                       0x00138     19
+rtc_init                                                                          0x0014B      9
+rtc_get                                                                           0x00154     48
+rtc_set                                                                           0x00184     34
+read                                                                              0x001A6     58
+write_line                                                                        0x001E0     20
+timer_init                                                                        0x001F4     18
+timer1_ovf_isr                                                                    0x00206     31
+main                                                                              0x00225    308
+_lcd_write_nibble_G100                                                            0x00359     20
+_lcd_write_data                                                                   0x0036D     12
+lcd_gotoxy                                                                        0x00379     13
+lcd_clear                                                                         0x00386     12
+lcd_putchar                                                                       0x00392     21
+lcd_puts                                                                          0x003A7     17
+lcd_init                                                                          0x003B8     46
+put_buff_G101                                                                     0x003E6     58
+_ftoe_G101                                                                        0x00420    213
+_print_G101                                                                       0x004F5    538
+sprintf                                                                           0x0070F     52
+strcpyf                                                                           0x00743     13
+strlen                                                                            0x00750     12
+strlenf                                                                           0x0075C     13
+ftrunc                                                                            0x00769     49
+floor                                                                             0x0079A     23
+ftoa                                                                              0x007B1    164
